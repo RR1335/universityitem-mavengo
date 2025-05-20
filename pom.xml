@@ -19,9 +19,16 @@
   <name>Archetype - mavengo</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
+  <!-- 聚合其它模块 -->
+<!--  <modules>-->
+<!--    <module>../trymaven-pojo</module>-->
+<!--    <module>../trymaven-utils</module>-->
+<!--    <module>../university</module>-->
+<!--  </modules>-->
 
-  </properties>
+<!--  <properties>-->
+
+<!--  </properties>-->
 
   <dependencies>
     <dependency>
@@ -30,10 +37,10 @@
     </dependency>
   </dependencies>
 
-  <dependencyManagement>
-    <dependencies>
+<!--  <dependencyManagement>-->
+<!--    <dependencies>-->
 
-    </dependencies>
-  </dependencyManagement>
+<!--    </dependencies>-->
+<!--  </dependencyManagement>-->
 
 </project>
