@@ -1,0 +1,35 @@
+# Spring 配置
+spring:
+    # MySQL 数据库连接配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/university
+    username: root
+    password: 123789010
+
+    # Spring 上传文件配置
+  servlet:
+    multipart:
+        # 单个文件上传的大小
+      max-file-size: 2MB
+        # 一次上传最大的上传数据和
+      max-request-size: 100MB
+
+# Mybatis 数据库配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# Aliyun OSS 配置
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    bucketName: javawebdev
+    region: cn-beijing
+
+
+# 日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager:  "debug"
